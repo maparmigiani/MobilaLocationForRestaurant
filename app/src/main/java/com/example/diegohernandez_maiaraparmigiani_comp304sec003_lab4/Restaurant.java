@@ -4,12 +4,9 @@ public class Restaurant {
     private String name, address, imgResource;
     double latitude, longitud;
 
-    public Restaurant(String name, String address, String imgResource, double latitude, double longitud) {
+    public Restaurant(String name, String address) {
         this.name = name;
         this.address = address;
-        this.imgResource = imgResource;
-        this.latitude = latitude;
-        this.longitud = longitud;
     }
 
     public String getName() {
@@ -50,5 +47,11 @@ public class Restaurant {
 
     public void setLongitud(double longitud) {
         this.longitud = longitud;
+    }
+
+    @Override
+    public String toString() {
+        return name +"\n" +address;
+
     }
 }

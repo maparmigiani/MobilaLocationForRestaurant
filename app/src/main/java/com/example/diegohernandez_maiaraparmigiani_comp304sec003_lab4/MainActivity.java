@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         cuisines.add("Latin");
-        cuisines.add("Greek");
+        cuisines.add("Mediterranean");
         cuisines.add("Italian");
         cuisines.add("Korean");
         cuisines.add("Japanese");
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
 
-                //---------------
+                //Setting geocoder
                 List<Address> addressList = null;
                 Locale canadaLocale = new Locale("en","CA"); // this is for limiting the search to canada
                 Geocoder geocoder = new Geocoder(getApplicationContext(),canadaLocale); // this is for using some features for searching places
